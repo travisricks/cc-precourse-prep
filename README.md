@@ -14,8 +14,9 @@ This repo is a place to store my research and practice exercises related to the 
 * [Git & GitHub](git-and-github.md)
 * [Node.js](nodejs.md)
 * Command Line
-* Visual Studio Code
-* Slack
+* [Visual Studio Code](vsc.md)
+* Slack <br>
+--A popular instant messaging app favorited by tech teams.
 
 ## Developer Basics
 
