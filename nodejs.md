@@ -1,0 +1,2 @@
+# Node.js
+[Node.js](https://nodejs.org/en/) is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. This means you can use Node.js for things besides interacting with websites.

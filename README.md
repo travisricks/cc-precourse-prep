@@ -5,15 +5,14 @@ This repo is a place to store my research and practice exercises related to the 
 
 * Recursive functions
 * Higher order functions
-* Instantiation patterns & polymorphism
+* [Instantiation patterns](instantiation.md) & polymorphism
 * ES5 & ES6
 * Closures
 
 ## Dev Environment
 
-* [Git](git-and-github.md)
-* GitHub
-* NodeJS
+* [Git & GitHub](git-and-github.md)
+* [Node.js](nodejs.md)
 * Command Line
 * Visual Studio Code
 * Slack
