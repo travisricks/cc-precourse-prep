@@ -5,3 +5,6 @@ Git is an open source version control system. It's a distributed system which me
 
 ## GitHub
 GitHub is a cloud-based hosting service for Git repositories. It has [features](https://github.com/features) for team collaboration, issue and bug tracking, deployment releases, and many more.
+
+## Experience
+In my last job, I used not only GitHub but also BitBucket to work with Git repositories on a daily basis. I've also used GitHub personally for hosting small web projects.

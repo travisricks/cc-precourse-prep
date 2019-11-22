@@ -1,5 +1,5 @@
 # cc-precourse-prep
-This repo is a place to store my research and practice exercises related to the CC precourse program.
+This repo is a place to store my research and prior experience related to the CC precourse program topics.
 
 ## Mastering JavaScript
 
@@ -13,10 +13,10 @@ This repo is a place to store my research and practice exercises related to the 
 
 * [Git & GitHub](git-and-github.md)
 * [Node.js](nodejs.md)
-* Command Line
+* [Command Line](command-line.md)
 * [Visual Studio Code](vsc.md)
 * Slack <br>
---A popular instant messaging app especially among tech teams.
+--A popular instant messaging app especially among tech teams. I've used this as well as Atlassian's HipChat on dev teams.
 
 ## Developer Basics
 
