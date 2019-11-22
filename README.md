@@ -1,6 +1,8 @@
 # cc-precourse-prep
 This repo is a place to store my research and prior experience related to the CC precourse program topics.
 
+The subpages under Mastering JavaScript document the research I've done on these topics since receiving the syllabus. All other subpages show the experience I've had with those topics.
+
 ## Mastering JavaScript
 
 * Recursive functions
