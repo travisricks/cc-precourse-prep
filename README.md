@@ -8,7 +8,7 @@ The subpages under Mastering JavaScript document the research I've done on these
 * [Recursive functions](recursive-functions.md)
 * [Higher order functions](higher-order-functions.md)
 * [Instantiation patterns](instantiation.md) & [polymorphism](polymorphism.md)
-* ES5 & ES6
+* [ES5 & ES6](es5-6.md)
 * Closures
 
 ## Dev Environment
