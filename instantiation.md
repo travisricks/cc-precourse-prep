@@ -67,4 +67,4 @@ console.log(nurseOlynyk.certifications);
 
 
 ---
-_sources:_ https://medium.com/@taylorshephard1/instantiation-patterns-in-javascript-7f9463b95839, https://www.codecademy.com/
+_sources:_ https://medium.com/@taylorshephard1/instantiation-patterns-in-javascript-7f9463b95839, https://www.codecademy.com/, https://medium.com/dailyjs/instantiation-patterns-in-javascript-8fdcf69e8f9b
