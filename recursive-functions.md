@@ -40,7 +40,7 @@ This is the fail-safe case.
 ---
 When the function returns everything will **unwind**. This is because recursion is simply a group of nested function calls. With nested functions, **the most inner nested function will return first**.
 
-```
+```javascript
 factorial(3);
 
 // how it works
@@ -65,7 +65,7 @@ factorial(3) returns 3 * factorial(2)  => 3 * 2 * 1 * 1
 ```
 
 ## Example: reversing a string
-```
+```javascript
 function revStr(str){
   if (str === '') return '';
   return revStr(str.substr(1)) + str[0];
@@ -75,7 +75,7 @@ revStr('cat');
 ```
 
 what's happening as the function **unwinds**:
-```
+```javascript
 revStr('cat')  returns revStr('at') + 'c'
 revStr('at')   returns revStr('t') +  'a'
 revStr('t')    returns revStr('') +   't'
