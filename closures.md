@@ -1,25 +1,47 @@
-Closures
-This leads us to one of the most powerful abstractions that JavaScript has to offer — but also the most potentially confusing. What does this do?
+# Closures
 
-function makeAdder(a) {
-  return function(b) {
-    return a + b;
+Closures are important because they control what is and isn’t in scope in a particular function, along with which variables are shared between sibling functions in the same containing scope. Understanding how variables and functions relate to each other is critical to understanding what’s going on in your code, in both functional and object oriented programming styles.
+
+Closures are frequently used in JavaScript for object data privacy, in event handlers and callback functions, and in partial applications, currying, and other functional programming patterns.
+
+## What is a Closure?
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+To use a closure, define a function inside another function and expose it. To expose a function, return it or pass it to another function.
+
+The inner function will have access to the variables in the outer function scope, even after the outer function has returned.
+
+## Using Closures (Examples)
+Among other things, closures are commonly used to give objects data privacy. Data privacy is an essential property that helps us program to an interface, not an implementation. This is an important concept that helps us build more robust software because implementation details are more likely to change in breaking ways than interface contracts.
+
+In JavaScript, closures are the primary mechanism used to enable data privacy. When you use closures for data privacy, the enclosed variables are only in scope within the containing (outer) function. You can’t get at the data from an outside scope except through the object’s privileged methods. In JavaScript, any exposed method defined within the closure scope is privileged. For example:
+
+```javascript
+const getSecret = (secret) => {
+  return {
+    get: () => secret
   };
-}
-var add5 = makeAdder(5);
-var add20 = makeAdder(20);
-add5(6); // ?
-add20(7); // ?
-The name of the makeAdder() function should give it away: it creates new 'adder' functions, each of which, when called with one argument, adds it to the argument that it was created with.
+};
 
-What's happening here is pretty much the same as was happening with the inner functions earlier on: a function defined inside another function has access to the outer function's variables. The only difference here is that the outer function has returned, and hence common sense would seem to dictate that its local variables no longer exist. But they do still exist — otherwise, the adder functions would be unable to work. What's more, there are two different "copies" of makeAdder()'s local variables — one in which a is 5 and the other one where a is 20. So the result of that function calls is as follows:
+test('Closure for object privacy.', assert => {
+  const msg = '.get() should have access to the closure.';
+  const expected = 1;
+  const obj = getSecret(1);
 
-add5(6); // returns 11
-add20(7); // returns 27
-Here's what's actually happening. Whenever JavaScript executes a function, a 'scope' object is created to hold the local variables created within that function. It is initialized with any variables passed in as function parameters. This is similar to the global object that all global variables and functions live in, but with a couple of important differences: firstly, a brand new scope object is created every time a function starts executing, and secondly, unlike the global object (which is accessible as this and in browsers as window) these scope objects cannot be directly accessed from your JavaScript code. There is no mechanism for iterating over the properties of the current scope object, for example.
+  const actual = obj.get();
 
-So when makeAdder() is called, a scope object is created with one property: a, which is the argument passed to the makeAdder() function. makeAdder() then returns a newly created function. Normally JavaScript's garbage collector would clean up the scope object created for makeAdder() at this point, but the returned function maintains a reference back to that scope object. As a result, the scope object will not be garbage-collected until there are no more references to the function object that makeAdder() returned.
+  try {
+    assert.ok(secret, 'This throws an error.');
+  } catch (e) {
+    assert.ok(true, `The secret var is only available
+      to privileged methods.`);
+  }
 
-Scope objects form a chain called the scope chain, similar to the prototype chain used by JavaScript's object system.
+  assert.equal(actual, expected, msg);
+  assert.end();
+});
+```
 
-A closure is the combination of a function and the scope object in which it was created. Closures let you save state — as such, they can often be used in place of objects. You can find several excellent introductions to closures.
+
+---
+_sources:_ https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36, 
