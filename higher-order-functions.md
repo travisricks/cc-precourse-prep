@@ -33,7 +33,7 @@ repeat(3, n => {
 
 Rewriting `Array.map`:
 ```javascript
-funciton map(array, func) {
+function map(array, func) {
     let result = [];
     for (let i = 0; i < array.length; i++>) {
         let original = array[i];
