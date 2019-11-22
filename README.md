@@ -16,12 +16,11 @@ This repo is a place to store my research and practice exercises related to the 
 * Command Line
 * [Visual Studio Code](vsc.md)
 * Slack <br>
---A popular instant messaging app favorited by tech teams.
+--A popular instant messaging app especially among tech teams.
 
 ## Developer Basics
 
-* HTML
-* CSS
+* [HTML & CSS](html-css.md)
 * DOM manipulation
 * Test-driven development
 
