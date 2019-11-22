@@ -18,4 +18,4 @@ Here are a few websites I was a part of:
 Outside of work, I also built a few projects for class work. This included using some data visualization tools, Highcharts and Tableau, as well as shooting and editing videos.
 
 * <a href="http://travisricks.github.io/msu-salary/" target="_blank">Faculty Salary Data Visualization</a>
-* <a href="http://travisricks.github.io/801-Final/" target="_blank">Surviving Student Debt</a>" target="_blank"> </a>
+* <a href="http://travisricks.github.io/801-Final/" target="_blank">Surviving Student Debt</a>
