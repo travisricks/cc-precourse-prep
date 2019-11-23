@@ -24,7 +24,7 @@ The subpages under Mastering JavaScript document the research I've done on these
 
 * [HTML & CSS](html-css.md)
 * [DOM manipulation](dom-manipulation.md)
-* Test-driven development
+* [Test-driven development](test-driven-dev.md)
 
 ## Projects (You May Work On)
 
