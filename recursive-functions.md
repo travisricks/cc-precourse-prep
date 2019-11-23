@@ -1,3 +1,5 @@
+# Recursive Functions
+
 A recursive function is a function that calls itself. 
 
 A classic example from math is factorial. A factorial is the product of all positive integers less than or equal to it. For example 5! = 5 * 4 * 3 * 2 * 1 = 120.
