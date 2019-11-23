@@ -23,7 +23,7 @@ The subpages under Mastering JavaScript document the research I've done on these
 ## Developer Basics
 
 * [HTML & CSS](html-css.md)
-* DOM manipulation
+* [DOM manipulation](dom-manipulation.md)
 * Test-driven development
 
 ## Projects (You May Work On)

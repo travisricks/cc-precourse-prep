@@ -1,5 +1,5 @@
 # ToDo
 * ~~finish closures~~
 * ~~add to nodejs~~
-* DOM manipulation
+* ~~DOM manipulation~~
 * Test-driven development
