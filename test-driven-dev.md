@@ -22,6 +22,7 @@ It’s the combination of these two testing techniques that will flush out as ma
 1. Description - usually the first parameter to QUnit's test() method, describing what is expected to happen in the test
 1. Computation - executes a function/method (which invokes the method you will write to make your test pass)
 1. Assertion - verifies that the result of your computation is what you expect it to be.
+
 ![test screenshot](img/screenshot-test.png)
 
 
