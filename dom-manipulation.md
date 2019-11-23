@@ -4,7 +4,7 @@
 
 __DOM__ = Document Object Model. The HTML
 
-JavaScript can access and change all the elements of an HTML document. JavaScript can:
+JavaScript can:
 
 * change all the HTML elements in the page
 * change all the HTML attributes in the page
